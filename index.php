@@ -5,7 +5,7 @@
     </head>
     <body>
         
-        <h1>Heather O'Connell's CST 352</h1>
+        <h1>Heather O'Connell's CST 352 Web Scripting</h1>
         
     </body>
 </html>

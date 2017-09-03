@@ -1,0 +1,59 @@
+/* challenge 1 */
+body {
+    background-color:black;
+}
+
+header h1 {
+    color:yellow;
+}
+
+h1, h2 {
+    font-family: "Lobster", cursive;
+    text-align:center;
+}
+
+h2 {
+    color:white;
+    
+}
+
+main {
+    display:block;
+    margin:0px auto;
+    width: 90%;
+}
+
+div {
+    float:left;
+    display:inline-block;
+    width:50%;
+}
+
+img {
+    width:80%;
+}
+
+.season:hover {
+    width:100%;
+    /*transition:.9s;*/
+}
+
+#spring {
+    border-radius: 70px 0px 0px 0px;
+}
+
+#summer {
+    border-radius: 0px 70px 0px 0px;
+}
+
+#fall {
+    border-radius: 0px 0px 0px 70px;
+}
+
+#winter {
+    border-radius: 0px 0px 70px 0px;
+}
+
+hr {
+    clear:both;
+}

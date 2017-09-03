@@ -1,0 +1,224 @@
+/* HW 1 */
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    background-color: #665c77;
+    font-family: 'Roboto', sans-serif;
+    margin-top:20px;
+}
+
+#content {
+    display: block;
+    margin: 0px auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 50px;
+}
+
+main {
+    background-color:#e8e3ef;
+    
+    /*padding:10px;*/
+    position:relative;
+}
+
+.tall {
+    height:500px;
+}
+
+.taller {
+    height:650px;
+}
+
+p {
+    line-height:150%;
+}
+
+/* HEADER & NAV */
+
+header,
+footer {
+    text-align: center;
+    margin:10px 0px;
+}
+
+header {
+    height:125px;
+}
+
+header h1 {
+    padding:10px;
+    font-family: 'Bungee';
+    font-size:50px;
+}
+
+nav {
+    margin-top:10px;
+    font-size: large;
+}
+
+nav a {
+    padding: 0px 30px;
+}
+
+.active {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    color:#e76c2e;
+    
+    /*#49b6a0; */
+    /*#72c7b6;*/
+}
+
+a:visited {
+    color:#6a3eaa;
+    
+    /*#7226e0;*/
+}
+
+a:hover {
+    text-decoration: underline;
+    color:#f69c6f;
+}
+
+/* HOME */
+
+#main {
+    width:450px;
+    position:absolute;
+    left:-10px;
+    bottom:-10px;
+    /*margin-right:40px;*/
+    /*float:left;*/
+}
+
+#front {
+    /*width:60%;*/
+    /*margin:100px 0px;*/
+    margin-left:450px;
+    margin-right:50px;
+    padding:50px 0px;
+}
+
+#front p, ol {
+    padding:10px 0px;
+}
+
+#front ol {
+    margin-left:50px;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.sub-list {
+    font-style: italic;
+    color:#999999;
+    text-transform: none;
+    font-weight:500;
+    
+}
+
+/* AFFORDANCES */
+
+table {
+    width:80%;
+    padding: 50px 0px;
+    margin:0px auto;
+}
+
+th {
+    width:50%;
+    font-family: 'Bungee';
+    text-align:center;
+    font-size: 25px;
+    background-color:#f8bfa0;
+    padding:10px 0px;
+}
+
+td {
+    padding: 40px;
+    vertical-align: top;
+}
+
+.left {
+    border-radius: 25px 0px 0px 25px;
+}
+
+.right {
+    border-radius: 0px 25px 25px 0px;
+}
+
+.ex {
+    background-color:#d7cfe2;
+    padding:10px 40px;
+}
+
+td img {
+    float:left;
+    margin-right:10px;
+}
+
+#folders {
+    width:50%;
+}
+
+#folder-icon {
+    width:25%;
+}
+
+/* CONSTRAINTS */
+
+#constraints th {
+    width:25%;
+}
+
+#top {
+    border-top-left-radius: 50px;
+}
+
+#bottom {
+    border-bottom-left-radius: 50px;
+}
+
+#cursor {
+    float:right;
+    width:20%;
+    position:absolute;
+    right:0;
+    top:0;
+    margin:100px 0px;
+    opacity:0.1;
+}
+
+/* SIGNIFIERS */
+
+#flag {
+    width:40%;
+}
+
+#platform {
+    width:60%;
+}
+
+/* FOOTER */
+
+footer {
+    /*height:45px;*/
+    padding:10px;
+}
+
+footer p {
+    /*padding: 10px;*/
+    font-size: small;
+    clear:both;
+}

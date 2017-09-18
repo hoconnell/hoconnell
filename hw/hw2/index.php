@@ -18,6 +18,9 @@
             td:hover {
                 background: rgb($color);
             }
+            footer a:hover {
+                background-color: rgba($color, .3);
+            }
         ";
     }
 ?>
@@ -131,6 +134,7 @@
         
         <footer>
             <hr>
+            <img src="img/csumb_logo.png" alt="csumb logo" />
             <p>2017 &copy; Heather O'Connell CST 352</p>
             <p>Image courtesy of <a href="http://pixabay.com" target="_blank">Pixabay</a></p>
         </footer>

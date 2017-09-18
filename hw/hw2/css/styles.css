@@ -21,7 +21,6 @@ td {
     width: 10%;
     position: relative;
     text-align: center;
-    /*background: rgba(255, 215, 0, .8);*/
 }
 
 td:after {
@@ -29,10 +28,6 @@ td:after {
     display: block;
     margin-top: 100%;
 }
-
-/*td:hover {*/
-/*    background: gold;*/
-/*}*/
 
 td .content {
     position: absolute;
@@ -60,10 +55,14 @@ footer hr {
     margin-bottom: 30px;
 }
 
+footer img {
+    height:75px;
+}
+
 footer p {
     margin: 0px;
 }
 
 footer a:hover {
-    background-color: gold;
+    text-decoration: none;
 }

@@ -1,0 +1,22 @@
+/* Challenge 2 */
+
+body {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    width:400px;
+    margin:0px auto;
+}
+
+div {
+    float:left;
+    width:200px
+    /*padding-left:50px;*/
+}
+
+p {
+    clear:both;
+    padding:50px;
+    color:green;
+    font-size: larger;
+}

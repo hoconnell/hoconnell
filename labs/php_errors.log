@@ -1,0 +1,2 @@
+[14-Sep-2017 18:20:06 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/hoconnell/labs/lab3/index.php on line 20
+[14-Sep-2017 18:24:46 UTC] PHP Parse error:  syntax error, unexpected 'for' (T_FOR), expecting ',' or ';' in /home/ubuntu/workspace/hoconnell/labs/lab3/index.php on line 15

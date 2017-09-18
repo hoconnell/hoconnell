@@ -8,3 +8,4 @@
 [07-Sep-2017 17:42:28 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/hoconnell/practice/randomBgColor.php on line 24
 [07-Sep-2017 17:42:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/hoconnell/practice/randomBgColor.php on line 24
 [07-Sep-2017 17:42:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/hoconnell/practice/randomBgColor.php on line 24
+[12-Sep-2017 17:58:41 UTC] PHP Fatal error:  Cannot use [] for reading in /home/ubuntu/workspace/hoconnell/practice/arrays.php on line 8

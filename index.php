@@ -3,7 +3,7 @@
     <head>
         <title>Heather CST 352 Workspace Directory</title>
         <style>
-            body * {
+            h1, h3, a{
                 font-family:Tahoma, sans-serif;
                 display:block;
             }
@@ -20,6 +20,7 @@
         <a href="labs/lab1/index.html">Lab 1: Portfolio Page</a>
         <a href="labs/lab2/index.php">Lab 2: Slotmachine</a>
         <a href="labs/lab3/index.php">Lab 3: Ace Poker</a>
+        <a href="labs/lab4/index.php">Lab 4: Image Carousel</a>
         
         <h3>Practice Exercises</h3>
         <a href="practice/randomBgColor.php">Ex 1: Random Background Color</a>

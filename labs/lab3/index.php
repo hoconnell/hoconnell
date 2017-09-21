@@ -17,6 +17,7 @@ function displayHand() {
     global $deck, $totalPts;
     $handPts = 0;
     $handAces = 0;
+    
     for($i = 0; $i < 5; $i++) {
         $lastCard = array_pop($deck);
         
@@ -44,10 +45,9 @@ function displayHand() {
             default:
                 echo "<img src='img/$cardSuit/$cardVal.png' alt='$cardSuit card #$cardVal' />";
         }
-        
+        $handPts = $handPts + $cardVal;
     }
     
-    $handPts = $handPts + $cardVal;
     $totalPts = $totalPts + $handPts;
     
     echo "<span> Points: $handPts Aces: ";

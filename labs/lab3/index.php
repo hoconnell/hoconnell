@@ -6,13 +6,17 @@
 // hearts   27–39   = card + 26
 // spades   40–52   = card + 39
 
-$deck = range(1,52);
+$deck = range(1,41);
 shuffle($deck);
 // print_r($deck);
 
+$totalPts = 0;
+
 // will display 5 random numbers from deck
 function displayHand() {
-    global $deck;
+    global $deck, $totalPts;
+    $handPts = 0;
+    $handAces = 0;
     for($i = 0; $i < 5; $i++) {
         $lastCard = array_pop($deck);
         
@@ -32,20 +36,46 @@ function displayHand() {
             $cardVal = 13;
         }
         
-        echo "<img src='img/$cardSuit/$cardVal.png' alt='$cardSuit card #$cardVal' />";
+        switch($cardVal) {
+            case 1:
+                echo "<img class='ace' src='img/$cardSuit/$cardVal.png' alt='ace of $cardSuit' />";
+                $handAces = $handAces + 1; // $handAces++
+                break;
+            default:
+                echo "<img src='img/$cardSuit/$cardVal.png' alt='$cardSuit card #$cardVal' />";
+        }
+        
+    }
+    
+    $handPts = $handPts + $cardVal;
+    $totalPts = $totalPts + $handPts;
+    
+    echo "<span> Points: $handPts Aces: ";
+    return $handAces;
+}
+
+function idWinner() {
+    global $player1Aces, $player2Aces;
+    
+    if($player1Aces > $player2Aces) {
+        echo "Player 1 ";
+    } else if($player1Aces < $player2Aces) {
+        echo "Player 2 ";
+    } else {
+        echo "Nobody ";
     }
 }
 
 // will display 5 imgs of random cards
-function displayRandCards() {
-    $cardSuits = array('clubs', 'diamonds', 'hearts', 'spades');
+// function displayRandCards() {
+//     $cardSuits = array('clubs', 'diamonds', 'hearts', 'spades');
     
-    for($i = 0; $i < 5; $i++) {
-        $randSuit = $cardSuits[rand(0,3)];
-        $randCard = rand(1,13);
-        echo "<img src='img/$randSuit/$randCard.png' alt='$randSuit, card $randCard' />";
-    }
-}
+//     for($i = 0; $i < 5; $i++) {
+//         $randSuit = $cardSuits[rand(0,3)];
+//         $randCard = rand(1,13);
+//         echo "<img src='img/$randSuit/$randCard.png' alt='$randSuit, card $randCard' />";
+//     }
+// }
 
 ?>
 
@@ -64,32 +94,32 @@ function displayRandCards() {
         <h3>Player with more aces wins all points!</h3>
         
         <div class="player">
-            <p>You: </p>
+            <span>You: </span>
             <div class="cards">
                 <?= 
                 
-                displayHand();
-                // displayRandCards(); 
+                $player1Aces = displayHand(); 
                 
                 ?>
             </div>
         </div>
         
         <div class="player">
-            <p>PC: </p>
+            <span>PC: </span>
             <div class="cards">
                 <?= 
                 
-                displayHand();
-                // displayRandCards(); 
+                $player2Aces = displayHand();
                 
                 ?>
             </div>
         </div>
         
-        <br /><hr>
+        <h3><?= idWinner(); ?> wins <?= $totalPts ?> points!</h3>
+        
         <footer>
-            <p>2017 &copy; Heather O'Connell</p>
+            <br /><hr>
+            <p>2017 &copy; Heather O'Connell CST 352</p>
         </footer>
 
     </body>

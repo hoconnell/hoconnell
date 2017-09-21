@@ -3,3 +3,29 @@
 body {
     text-align:center;
 }
+
+.player {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display:inline;
+    
+}
+
+span {
+    padding:0px 10px;
+}
+
+.cards img {
+    margin:4px;
+    vertical-align: middle;
+}
+
+.ace {
+    border: 3px solid yellow;
+}
+
+.player, footer {
+    clear:both;
+}

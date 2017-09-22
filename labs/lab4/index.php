@@ -25,10 +25,21 @@
                 include 'api/pixabayAPI.php';
                 $imageURLs = getImageURLs($_GET['keyword']);
                 // print_r($imageURLs);
+                $bgImg = $imageURLs[array_rand($imageURLs)];
                 
                 for($i = 0; $i < 5; $i++) {
-                    $lastImg = array_pop($imageURLs);
-                    echo "<img src='$lastImg' />";
+                    // shuffle($imageURLs); // problem: can take long with many items; ideal if displaying all
+                    // $lastImg = array_pop($imageURLs);
+                    // echo "<img src='" . $lastImg . "' width='200' />";
+                    
+                    // echo "<img src='" . $imageURLs[rand(0, count($imageURLs))] . "' width='200' />";
+                    
+                    do {
+                        $randIndex = rand(0, count($imageURLs));
+                    } while(!isset($imageURLs[$randIndex]));
+                        
+                    echo "<img src='" . $imageURLs[$randIndex] . "' width='200' />";
+                    unset($imageURLs[$randIndex]);
                 }
                 
             }

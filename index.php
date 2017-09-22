@@ -15,6 +15,7 @@
         <h3>Homework</h3>
         <a href="hw/hw1/index.html">Hw 1: CD/CS Topic Introduction</a>
         <a href="hw/hw2/index.php">Hw 2: PHP Control Structures</a>
+        <a href="hw/hw2/index.php">Hw 3: HTML Forms</a>
         
         <h3>Labs</h3>
         <a href="labs/lab1/index.html">Lab 1: Portfolio Page</a>

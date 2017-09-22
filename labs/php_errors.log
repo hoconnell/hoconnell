@@ -3,3 +3,13 @@
 [19-Sep-2017 18:10:53 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/ubuntu/workspace/hoconnell/labs/lab3/index.php on line 75
 [19-Sep-2017 18:28:27 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/hoconnell/labs/lab3/index.php on line 13
 [21-Sep-2017 17:15:06 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/hoconnell/labs/lab3/index.php on line 113
+[22-Sep-2017 17:46:34 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/hoconnell/labs/lab4/index.php on line 38
+[22-Sep-2017 17:46:34 UTC] PHP Stack trace:
+[22-Sep-2017 17:46:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab4/index.php:0
+[22-Sep-2017 17:46:34 UTC] PHP   2. rand() /home/ubuntu/workspace/hoconnell/labs/lab4/index.php:38
+[22-Sep-2017 17:47:30 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/hoconnell/labs/lab4/index.php on line 38
+[22-Sep-2017 17:47:30 UTC] PHP Stack trace:
+[22-Sep-2017 17:47:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab4/index.php:0
+[22-Sep-2017 17:47:44 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/hoconnell/labs/lab4/index.php on line 38
+[22-Sep-2017 17:47:44 UTC] PHP Stack trace:
+[22-Sep-2017 17:47:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab4/index.php:0

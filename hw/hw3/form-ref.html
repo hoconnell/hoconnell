@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assign 4</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        /* CONTACT US  -----------------------------------------------------------------  */
+
+        #contactform {
+            margin-top: 25px;
+            margin-left: 33%;
+        }
+
+        #contactform[type="text"],
+        #contactform[type="email"],
+        #contactform[type="textarea"] {
+            display: block;
+        }
+
+        #contactform label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .formbox {
+            margin-bottom: 20px;
+        }
+
+        #contactblurb {
+            float: left;
+            background-color: #008100;
+            height: 400px;
+            width: 30%;
+            border-radius: 25px;
+            margin-right: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        #contactblurb p {
+            padding: 0 25px 0 25px;
+        }
+
+        .ui-tooltip {
+            border-radius: 25px;
+            box-shadow: 2px 2px 2px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <div class="rounded">
+        <!-- MAIN PAGE ROUNDED CORNERS-->
+        <div>
+            <!-- TITLE -->
+            <h1 class="title"><a href="index.html">Welcome to MeyeCare!</a></h1>
+        </div>
+        <div class="menu">
+            <ul id="newMenu" class="mobile">
+                <li>
+                    <div><a href="index.html">Home</a></div>
+                </li>
+                <li>
+                    <div><a href="about.html">About</a></div>
+                </li>
+                <li>
+                    <div><a href="exam.html">Exam Locations</a></div>
+                </li>
+                <li>
+                    <div><a href="shop.html">Shop for Glasses</a></div>
+                </li>
+                <li>
+                    <div><a href="photo.html">Photo Gallery</a></div>
+                </li>
+                <li>
+                    <div><a href="contact.html">Contact Us</a></div>
+                    <ul>
+                        <li>
+                            <div><a href="support.html">Support</a></div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="faq.html">FAQs</a></div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="about.html">About Meyecare</a></div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <script>
+                $(function() {
+                    $("#newMenu").menu();
+                });
+            </script>
+        </div>
+        <div class="content">
+            <!-- MAIN CONTENT -->
+
+            <!--Use a table or divs and form elements for //name//, //email//, ///issue/problem///; 
+            Name attributes should be name, email, questionIssue; 
+            Use basic form submit element; 
+            Post to the test website using: http://meyecare.herokuapp.com/support -->
+
+            <div id="contactblurb">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Let us know if you have a question or concern about our company or our website.</p>
+            </div>
+
+            <form action="http://meyecare.herokuapp.com/support" method="POST" id="contactform">
+
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="formbox" title="What you'd like us to call you." />
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" class="formbox" title="Where you'd like us to contact you." />
+
+                <label for="supportType">Type of Support:</label>
+                <select name="supportType" class="formbox">
+                </select>
+
+                <label for="questionIssue">Question/Issue:</label>
+                <textarea rows="10" cols="70" name="questionIssue" id="questionIssue" class="formbox"></textarea>
+
+                <label for="canContact">Can We Contact You?</label>
+                <input type="radio" name="canContact" value="yes"> Yes<br>
+                <input type="radio" name="canContact" value="no"> No<br>
+
+                <button class="submit">Submit</button>
+
+            </form>
+
+        </div>
+        <div class="footer">
+            <!--footer-->
+            <p class="copyright">&copy; 2015 - All rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(document).tooltip({
+            position: {
+                my: "left top",
+                at: "right+5 top-5",
+                collision: "none"
+            }
+        });
+
+        $('#contactform button').button().click(function(e) {
+            // click function
+            e.preventDefault();
+            // Check value of ea.
+            var nameValue = $('#contactform input[name="name"]').val();
+
+            var emailValue = $('#contactform input[name="email"]').val();
+
+            var questionValue = $('#contactform textarea[name="questionIssue"]').val();
+
+            var radioValue = $('#contactform input[name="canContact"]').val();
+
+            // Make sure the string inside value exists and has some length
+            if (nameValue && nameValue.length && emailValue && emailValue.length && questionValue && questionValue.length && radioValue && radioValue.length) {
+
+                // Submit the form if okay
+                $("#contactform").submit(e);
+
+                e.preventDefault();
+
+                // Add "submitted" text next to button
+
+                var newDiv = $('<div></div>').html('Form has been submitted. Thank you.');
+                $('#contactform').append(newDiv);
+
+                var nameValue = $('#contactform input[name="name"]').val("");
+
+                var emailValue = $('#contactform input[name="email"]').val("");
+
+                var questionValue = $('#contactform textarea[name="questionIssue"]').val("");
+
+                var radioValue = $('#contactform input[name="canContact"]').val("");
+
+            }
+            else {
+                // Tell the user if not okay
+                alert("All fields must be completed.");
+            }
+        });
+
+        $.ajax({
+                url: "https://meyecare.herokuapp.com/api/v1/supportTypes",
+                type: "GET",
+                dataType: "json",
+            })
+
+            .done(function(data) {
+                // console.log(data);
+
+                if (!data || data.length == 0) return;
+
+                for (var i in data) {
+                    console.log(data[i].supportTypeName);
+
+                    $('#contactform select[name="supportType"]').append('<option>' + data[i].supportTypeName + '</option>');
+                }
+            });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+[26-Sep-2017 17:45:42 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/hoconnell/practice/zodiac/index.php on line 8
+[26-Sep-2017 18:05:17 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/hoconnell/practice/zodiac/index.php on line 23
+[26-Sep-2017 18:18:25 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/hoconnell/practice/zodiac/index.php on line 28
+[26-Sep-2017 18:19:44 UTC] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/ubuntu/workspace/hoconnell/practice/zodiac/index.php on line 25
+[26-Sep-2017 18:20:26 UTC] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/ubuntu/workspace/hoconnell/practice/zodiac/index.php on line 25

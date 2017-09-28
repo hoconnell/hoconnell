@@ -1,6 +1,6 @@
 <?php 
     $bgImg = "img/sea.jpg";
-
+    
 ?>
 
 <!DOCTYPE html>
@@ -19,42 +19,101 @@
     </head>
     <body>
         
-        <?php 
-            if(isset($_GET["keyword"])) { // whether or not parameter "keyword" in url
+        
+        <br/>
+        <form> <!-- method="post" then use $_POST[] array -->
+            <input type="text" name="keyword" placeholder=" Type keyword" />
+            <div id="layoutDiv">
+                <input type="radio" name="layout" value="horizontal" id="l-horiz" />
+                    <label for="l-horiz">Horizontal</label>
+                <br/>
+                <input type="radio" name="layout" value="vertical" id="l-vert" /> 
+                    <label for="l-vert">Vertical</label>
+            </div>
+            <br/>
+            <select name="category">
+                <option value="">- Frequently Searched -</option>
+                <option value="ocean">Sea</option>
+                <option value="forest">Forest</option>
+                <option value="mountain">Mountains</option>
+                <option value="sky">Sky</option>
+                <option value="desert">Desert</option>
+            </select>
+            <input type="submit" value="Submit"/>
+        </form>
+        
+        <?php
+        
+            if(!isset($_GET["keyword"])) { // whether or not parameter "keyword" in url
+                echo "<h2>Type a keyword to display a slideshow with random images from Pixabay.com</h2>";
+            } else {
+                
+                if(isset($_GET["category"])) {
+                    $_GET["keyword"] = $_GET["category"];
+                }
+                
                 echo "You searched for: " . $_GET['keyword'] . "<br/>"; // associative array
                 include 'api/pixabayAPI.php';
-                $imageURLs = getImageURLs($_GET['keyword']);
-                // print_r($imageURLs);
+            
+                $imageURLs = getImageURLs($_GET['keyword']); // add second parameter for orientation
                 $bgImg = $imageURLs[array_rand($imageURLs)];
-                
+        ?>
+        
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <?php 
+                for($i = 0; $i < 5; $i++) {
+                    echo "<li data-target='#carousel-example-generic' data-slide-to='$i'";
+                    if($i == 0) {
+                        echo " class='active'";
+                    }
+                    echo "></li>";
+                }
+              ?>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+              <?php 
                 for($i = 0; $i < 5; $i++) {
                     // shuffle($imageURLs); // problem: can take long with many items; ideal if displaying all
                     // $lastImg = array_pop($imageURLs);
                     // echo "<img src='" . $lastImg . "' width='200' />";
-                    
                     // echo "<img src='" . $imageURLs[rand(0, count($imageURLs))] . "' width='200' />";
                     
                     do {
                         $randIndex = rand(0, count($imageURLs));
                     } while(!isset($imageURLs[$randIndex]));
                         
-                    echo "<img src='" . $imageURLs[$randIndex] . "' width='200' />";
+                    // echo "<img src='" . $imageURLs[$randIndex] . "' width='200' />";
+                    echo '<div class="item';
+                    
+                    if($i == 0) {
+                        echo ' active';
+                    } 
+                    
+                    echo '">';
+                    echo '<img src="' . $imageURLs[$randIndex] . '">';
+                    echo '</div>';
                     unset($imageURLs[$randIndex]);
                 }
-                
-            }
+              ?>
+            
+          </div>
         
-            if(!isset($imageURLs)) {
-                echo "<h2>Type a keyword to display a slideshow with random images from Pixabay.com</h2>";
-            } else {
-                
-            }
-        ?>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         
-        <form> <!-- method="post" then use $_POST[] array -->
-            <input type="text" name="keyword" placeholder="Type keyword" />
-            <input type="submit" value="Submit"/>
-        </form>
+        <?php } // end of else ?>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -15,7 +15,7 @@
         <h3>Homework</h3>
         <a href="hw/hw1/index.html">Hw 1: CD/CS Topic Introduction</a>
         <a href="hw/hw2/index.php">Hw 2: PHP Control Structures</a>
-        <a href="hw/hw2/index.php">Hw 3: HTML Forms</a>
+        <a href="hw/hw3/index.php">Hw 3: HTML Forms</a>
         
         <h3>Labs</h3>
         <a href="labs/lab1/index.html">Lab 1: Portfolio Page</a>
@@ -26,6 +26,7 @@
         <h3>Practice Exercises</h3>
         <a href="practice/randomBgColor.php">Ex 1: Random Background Color</a>
         <a href="practice/arrays.php">Ex 2: PHP Arrays</a>
+        <a href="practice/zodiac/index.php">Ex 3: Zodiac</a>
         
         <h3>Challenges</h3>
         <a href="challenges/challenge1/index.html">Challenge 1: Four Seasons</a>

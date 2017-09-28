@@ -1,16 +1,45 @@
-    body{
-        opacity:0.9;
-        width:100%;
-        text-align:center;
-        color:yellow;
+    body {
+        opacity: 0.9;
+        width: 100%;
+        text-align: center;
     }
     
+    h2 {
+        color: yellow;
+    }
+
     input {
         font-size: 3em;
         color: black;
+        border-radius: 75px;
+        
     }
     
+    select {
+        color: black;
+        font-size:1.5em;
+        margin:10px;
+    }
+    
+    #layoutDiv {
+        display:inline-block;
+        text-align:left;
+        background-color:white;
+        padding:10px;
+        border-radius: 10px;
+    }
+    
+    input[type=submit] {
+        display:block;
+        margin:20px auto;
+        font-size:2em;
+    }
+
     #carousel-example-generic {
-         margin: 0 auto;   
-         width: 700px;
+        margin: 0 auto;
+        width: 700px;
+    }
+    
+    #carousel-example-generic img {
+        margin: 0 auto;
     }

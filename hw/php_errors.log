@@ -1467,3 +1467,9 @@
 [17-Sep-2017 23:13:30 UTC] PHP Parse error:  syntax error, unexpected 'global' (T_GLOBAL) in /home/ubuntu/workspace/hoconnell/hw/hw2/index.php on line 30
 [17-Sep-2017 23:13:40 UTC] PHP Parse error:  syntax error, unexpected 'global' (T_GLOBAL) in /home/ubuntu/workspace/hoconnell/hw/hw2/index.php on line 30
 [17-Sep-2017 23:24:14 UTC] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK), expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/hoconnell/hw/hw2/index.php on line 8
+[26-Sep-2017 19:39:15 UTC] PHP Fatal error:  Call to undefined function displayAnswers() in /home/ubuntu/workspace/hoconnell/hw/hw3/results.php on line 37
+[26-Sep-2017 19:39:15 UTC] PHP Stack trace:
+[26-Sep-2017 19:39:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/hw/hw3/results.php:0
+[26-Sep-2017 19:52:27 UTC] PHP Fatal error:  Call to undefined function displayAnswers() in /home/ubuntu/workspace/hoconnell/hw/hw3/results.php on line 78
+[26-Sep-2017 19:52:27 UTC] PHP Stack trace:
+[26-Sep-2017 19:52:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/hw/hw3/results.php:0

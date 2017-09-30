@@ -31,10 +31,11 @@
         border-radius: 10px;
     }
     
-    input[type=submit] {
+    button {
         display:block;
         margin:20px auto;
         font-size:2em;
+        border-radius: 75px;
     }
 
     #carousel-example-generic {

@@ -26,3 +26,6 @@
 [29-Sep-2017 18:42:56 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/hoconnell/labs/lab4/index.php on line 59
 [29-Sep-2017 18:42:56 UTC] PHP Stack trace:
 [29-Sep-2017 18:42:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab4/index.php:0
+[30-Sep-2017 06:08:44 UTC] PHP Fatal error:  Call to undefined function getImageURLs() in /home/ubuntu/workspace/hoconnell/labs/lab4/index.php on line 51
+[30-Sep-2017 06:08:44 UTC] PHP Stack trace:
+[30-Sep-2017 06:08:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab4/index.php:0

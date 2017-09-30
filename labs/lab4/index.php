@@ -38,14 +38,20 @@
                 <option value="sky">Sky</option>
                 <option value="desert">Desert</option>
             </select>
-            <!--<input type="submit" value="Submit"/>-->
-            <button class="submit">Submit</button>
+            <br/>
+            <input type="submit" value="Submit"/>
+            <!--<button class="submit">Submit</button>-->
         </form>
         
         <?php
             
             if(!isset($_GET["keyword"])) { // whether or not parameter "keyword" in url
                 echo "<h2>Type a keyword or select from the drop-down to display a slideshow with random images from Pixabay.com</h2>";
+            } else if($_GET["keyword"] == "" && $_GET["category"] == "") {
+                echo "<h2>You must type a keyword or select from the drop-down.</h2>";
+                include 'api/pixabayAPI.php';
+                $imageURLs = getImageURLs($_GET['keyword'], $_GET["layout"]);
+                $bgImg = $imageURLs[array_rand($imageURLs)];
             } else {
                 
                 if($_GET["category"] !== "") {
@@ -127,22 +133,22 @@
         <!-- jQuery first, then Bootstrap because Bootstrap relies on jQuery -->
         
         <script>
-            $('#imgForm button').button().click(function(e) {
-                var keyword = $('#imgForm input[name="keyword"]').val();
-                var category = $('#imgForm select[name="category"]').val();
+            // $('#imgForm button').click(function(e) {
+            //     var keyword = $('#imgForm input[name="keyword"]').val();
+            //     var category = $('#imgForm select[name="category"]').val();
                 
-                if(keyword && keyword.length || 
-                    category && category.length ||
-                    keyword && keyword.length && category && category.length) {
+            //     if(keyword && keyword.length || 
+            //         category && category.length ||
+            //         keyword && keyword.length && category && category.length) {
                     
-                    $('#imgForm').submit(e);
+            //         $('#imgForm').submit(e);
                     
-                } else {
-                    e.preventDefault();
-                    alert("Please type or select keyword.");
-                }
+            //     } else {
+            //         e.preventDefault();
+            //         alert("Please type or select keyword.");
+            //     }
                 
-            });
+            // });
         </script>
         
     </body>

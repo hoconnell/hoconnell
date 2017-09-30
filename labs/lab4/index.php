@@ -31,7 +31,7 @@
             </div>
             <br/>
             <select name="category">
-                <option value="">- Frequently Searched -</option>
+                <option value="">- Select One -</option>
                 <option value="ocean">Sea</option>
                 <option value="forest">Forest</option>
                 <option value="mountain">Mountains</option>

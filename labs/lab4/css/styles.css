@@ -13,7 +13,7 @@
     input {
         font-size: 3em;
         color: black;
-        border-radius: 75px;
+        border-radius: 50px;
         
     }
     
@@ -31,16 +31,15 @@
         border-radius: 10px;
     }
     
-    button {
+    input[type=submit] {
         display:block;
         margin:20px auto;
         font-size:2em;
-        border-radius: 75px;
     }
 
     #carousel-example-generic {
         margin: 0 auto;
-        width: 700px;
+        width: 500px;
     }
     
     #carousel-example-generic img {

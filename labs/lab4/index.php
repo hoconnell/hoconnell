@@ -62,7 +62,7 @@
                 include 'api/pixabayAPI.php';
             
                 $imageURLs = getImageURLs($_GET['keyword'], $_GET["layout"]); // add second parameter for orientation
-                $bgImg = $imageURLs[rand(0,50)];
+                $bgImg = $imageURLs[array_rand($imageURLs)];
                 // echo $bgImg;
         ?>
         
@@ -70,7 +70,7 @@
           <!-- Indicators -->
           <ol class="carousel-indicators">
               <?php 
-                for($i = 0; $i < 5; $i++) {
+                for($i = 0; $i < 7; $i++) {
                     echo "<li data-target='#carousel-example-generic' data-slide-to='$i'";
                     if($i == 0) {
                         echo " class='active'";
@@ -83,7 +83,7 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
               <?php 
-                for($i = 0; $i < 5; $i++) {
+                for($i = 0; $i < 7; $i++) {
                     // shuffle($imageURLs); // problem: can take long with many items; ideal if displaying all
                     // $lastImg = array_pop($imageURLs);
                     // echo "<img src='" . $lastImg . "' width='200' />";

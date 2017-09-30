@@ -50,7 +50,7 @@
             } else if($_GET["keyword"] == "" && $_GET["category"] == "") {
                 echo "<h2>You must type a keyword or select from the drop-down.</h2>";
                 include 'api/pixabayAPI.php';
-                $imageURLs = getImageURLs($_GET['keyword'], $_GET["layout"]);
+                $imageURLs = getImageURLs("", "");
                 $bgImg = $imageURLs[array_rand($imageURLs)];
             } else {
                 
@@ -62,7 +62,7 @@
                 include 'api/pixabayAPI.php';
             
                 $imageURLs = getImageURLs($_GET['keyword'], $_GET["layout"]); // add second parameter for orientation
-                $bgImg = $imageURLs[array_rand($imageURLs)];
+                $bgImg = $imageURLs[rand(0,50)];
                 // echo $bgImg;
         ?>
         

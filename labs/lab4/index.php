@@ -1,6 +1,5 @@
 <?php 
     $bgImg = "img/sea.jpg";
-    
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +20,7 @@
         
         
         <br/>
-        <form> <!-- method="post" then use $_POST[] array -->
+        <form id="imgForm"> <!-- method="post" then use $_POST[] array -->
             <input type="text" name="keyword" placeholder=" Type keyword" />
             <div id="layoutDiv">
                 <input type="radio" name="layout" value="horizontal" id="l-horiz" />
@@ -39,24 +38,26 @@
                 <option value="sky">Sky</option>
                 <option value="desert">Desert</option>
             </select>
-            <input type="submit" value="Submit"/>
+            <!--<input type="submit" value="Submit"/>-->
+            <button class="submit">Submit</button>
         </form>
         
         <?php
-        
+            
             if(!isset($_GET["keyword"])) { // whether or not parameter "keyword" in url
-                echo "<h2>Type a keyword to display a slideshow with random images from Pixabay.com</h2>";
+                echo "<h2>Type a keyword or select from the drop-down to display a slideshow with random images from Pixabay.com</h2>";
             } else {
                 
-                if(isset($_GET["category"])) {
+                if($_GET["category"] !== "") {
                     $_GET["keyword"] = $_GET["category"];
                 }
                 
-                echo "You searched for: " . $_GET['keyword'] . "<br/>"; // associative array
+                // echo "You searched for: " . $_GET['keyword'] . "<br/>"; // associative array
                 include 'api/pixabayAPI.php';
             
-                $imageURLs = getImageURLs($_GET['keyword']); // add second parameter for orientation
+                $imageURLs = getImageURLs($_GET['keyword'], $_GET["layout"]); // add second parameter for orientation
                 $bgImg = $imageURLs[array_rand($imageURLs)];
+                // echo $bgImg;
         ?>
         
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -115,8 +116,34 @@
         
         <?php } // end of else ?>
         
+        <style>
+            body {
+                background-image: url('<?= $bgImg ?>');
+            }
+        </style>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- jQuery first, then Bootstrap because Bootstrap relies on jQuery -->
+        
+        <script>
+            $('#imgForm button').button().click(function(e) {
+                var keyword = $('#imgForm input[name="keyword"]').val();
+                var category = $('#imgForm select[name="category"]').val();
+                
+                if(keyword && keyword.length || 
+                    category && category.length ||
+                    keyword && keyword.length && category && category.length) {
+                    
+                    $('#imgForm').submit(e);
+                    
+                } else {
+                    e.preventDefault();
+                    alert("Please type or select keyword.");
+                }
+                
+            });
+        </script>
+        
     </body>
 </html>

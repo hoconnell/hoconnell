@@ -45,3 +45,15 @@
 [30-Sep-2017 06:41:08 UTC] PHP Stack trace:
 [30-Sep-2017 06:41:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab4/index.php:0
 [30-Sep-2017 06:41:08 UTC] PHP   2. array_rand() /home/ubuntu/workspace/hoconnell/labs/lab4/index.php:55
+[05-Oct-2017 18:42:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quotes.q_quotes' doesn't exist' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/index.php(37): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/index.php(60): getAllQuotes()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 37
+[05-Oct-2017 18:42:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quotes.q_quotes' doesn't exist' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/index.php(37): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/index.php(60): getAllQuotes()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 37

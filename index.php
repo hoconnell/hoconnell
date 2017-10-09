@@ -7,11 +7,17 @@
                 font-family:Tahoma, sans-serif;
                 display:block;
             }
+            footer {
+                margin-top:100px;
+                font-size: small;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
         
         <h1>Heather O'Connell's CST 352 Web Scripting</h1>
+        
         <h3>Homework</h3>
         <a href="hw/hw1/index.html">Hw 1: CD/CS Topic Introduction</a>
         <a href="hw/hw2/index.php">Hw 2: PHP Control Structures</a>
@@ -22,6 +28,7 @@
         <a href="labs/lab2/index.php">Lab 2: Slotmachine</a>
         <a href="labs/lab3/index.php">Lab 3: Ace Poker</a>
         <a href="labs/lab4/index.php">Lab 4: Image Carousel</a>
+        <a href="labs/lab5/index.php">Lab 5: Random Quotes</a>
         
         <h3>Practice Exercises</h3>
         <a href="practice/randomBgColor.php">Ex 1: Random Background Color</a>
@@ -32,5 +39,9 @@
         <a href="challenges/challenge1/index.html">Challenge 1: Four Seasons</a>
         <a href="challenges/challenge2/index.php">Challenge 2: Random Card Game</a>
         
+        <footer>
+            <hr>
+            <a href="https://cst352-hoconnell.c9users.io/phpMyAdmin/index.php">phpMyAdmin</a>
+        </footer>
     </body>
 </html>

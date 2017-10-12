@@ -57,3 +57,109 @@ Stack trace:
 #1 /home/ubuntu/workspace/hoconnell/labs/lab5/index.php(60): getAllQuotes()
 #2 {main}
   thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 37
+[10-Oct-2017 18:33:42 UTC] PHP Warning:  array_rand() expects parameter 1 to be array, null given in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 59
+[10-Oct-2017 18:33:42 UTC] PHP Stack trace:
+[10-Oct-2017 18:33:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[10-Oct-2017 18:33:42 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:75
+[10-Oct-2017 18:33:42 UTC] PHP   3. array_rand() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:59
+[10-Oct-2017 18:46:31 UTC] PHP Warning:  Missing argument 1 for newquote(), called in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 73 and defined in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 61
+[10-Oct-2017 18:46:31 UTC] PHP Stack trace:
+[10-Oct-2017 18:46:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[10-Oct-2017 18:46:31 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:86
+[10-Oct-2017 18:46:31 UTC] PHP   3. newquote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:73
+[10-Oct-2017 18:46:31 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 63
+[10-Oct-2017 18:46:31 UTC] PHP Stack trace:
+[10-Oct-2017 18:46:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[10-Oct-2017 18:46:31 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:86
+[10-Oct-2017 18:46:31 UTC] PHP   3. newquote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:73
+[10-Oct-2017 18:46:32 UTC] PHP Warning:  Missing argument 1 for newquote(), called in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 73 and defined in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 61
+[10-Oct-2017 18:46:32 UTC] PHP Stack trace:
+[10-Oct-2017 18:46:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[10-Oct-2017 18:46:32 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:86
+[10-Oct-2017 18:46:32 UTC] PHP   3. newquote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:73
+[10-Oct-2017 18:46:32 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 63
+[10-Oct-2017 18:46:32 UTC] PHP Stack trace:
+[10-Oct-2017 18:46:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[10-Oct-2017 18:46:32 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:86
+[10-Oct-2017 18:46:32 UTC] PHP   3. newquote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:73
+[10-Oct-2017 18:46:48 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 63
+[10-Oct-2017 18:46:48 UTC] PHP Stack trace:
+[10-Oct-2017 18:46:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[10-Oct-2017 18:46:48 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:86
+[10-Oct-2017 18:46:48 UTC] PHP   3. newquote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:73
+[12-Oct-2017 17:35:39 UTC] PHP Warning:  Illegal string offset 'quote' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 71
+[12-Oct-2017 17:35:39 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:39 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:39 UTC] PHP Warning:  Illegal string offset 'firstName' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 72
+[12-Oct-2017 17:35:39 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:39 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:39 UTC] PHP Warning:  Illegal string offset 'lastName' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 72
+[12-Oct-2017 17:35:39 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:39 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:39 UTC] PHP Warning:  Illegal string offset 'dob' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 73
+[12-Oct-2017 17:35:39 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:39 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:39 UTC] PHP Warning:  Illegal string offset 'dod' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 73
+[12-Oct-2017 17:35:39 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:39 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:39 UTC] PHP Warning:  Illegal string offset 'picture' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 74
+[12-Oct-2017 17:35:39 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:39 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:39 UTC] PHP Warning:  Illegal string offset 'profession' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 75
+[12-Oct-2017 17:35:39 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:39 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:39 UTC] PHP Warning:  Illegal string offset 'country' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 76
+[12-Oct-2017 17:35:39 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:39 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:54 UTC] PHP Warning:  Illegal string offset 'firstName' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 72
+[12-Oct-2017 17:35:54 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:54 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:54 UTC] PHP Warning:  Illegal string offset 'lastName' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 72
+[12-Oct-2017 17:35:54 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:54 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:54 UTC] PHP Warning:  Illegal string offset 'dob' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 73
+[12-Oct-2017 17:35:54 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:54 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:54 UTC] PHP Warning:  Illegal string offset 'dod' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 73
+[12-Oct-2017 17:35:54 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:54 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:54 UTC] PHP Warning:  Illegal string offset 'picture' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 74
+[12-Oct-2017 17:35:54 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:54 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:54 UTC] PHP Warning:  Illegal string offset 'profession' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 75
+[12-Oct-2017 17:35:54 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:54 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 17:35:54 UTC] PHP Warning:  Illegal string offset 'country' in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 76
+[12-Oct-2017 17:35:54 UTC] PHP Stack trace:
+[12-Oct-2017 17:35:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 17:35:54 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:99
+[12-Oct-2017 18:08:45 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 53
+[12-Oct-2017 18:08:45 UTC] PHP Stack trace:
+[12-Oct-2017 18:08:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 18:08:45 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:115
+[12-Oct-2017 18:09:37 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 54
+[12-Oct-2017 18:09:37 UTC] PHP Stack trace:
+[12-Oct-2017 18:09:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 18:09:37 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:116
+[12-Oct-2017 18:09:38 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 54
+[12-Oct-2017 18:09:38 UTC] PHP Stack trace:
+[12-Oct-2017 18:09:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 18:09:38 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:116
+[12-Oct-2017 18:09:40 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 54
+[12-Oct-2017 18:09:40 UTC] PHP Stack trace:
+[12-Oct-2017 18:09:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[12-Oct-2017 18:09:40 UTC] PHP   2. generateRandQuote() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:116

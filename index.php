@@ -34,6 +34,7 @@
         <a href="practice/randomBgColor.php">Ex 1: Random Background Color</a>
         <a href="practice/arrays.php">Ex 2: PHP Arrays</a>
         <a href="practice/zodiac/index.php">Ex 3: Zodiac</a>
+        <a href="practice/joins.php">Ex 4: MySQL Joins</a>
         
         <h3>Challenges</h3>
         <a href="challenges/challenge1/index.html">Challenge 1: Four Seasons</a>

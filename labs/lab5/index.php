@@ -94,13 +94,19 @@ function generateRandQuote() {
 <html>
     <head>
         <title> Lab 5 </title>
+        <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css" />
     </head>
     <body>
         
-        <?= generateRandQuote(); ?>
+        <div id="index">
         
-        <iframe name="authorInfo" width="500" height="300"></iframe>
+            <?= generateRandQuote(); ?>
+            
+            <iframe name="authorInfo"></iframe>
+        
+        </div>
         
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>

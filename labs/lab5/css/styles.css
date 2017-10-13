@@ -1,33 +1,60 @@
 /* Lab 5 */
 
 body {
-    font-family:Verdana;
+    font-family: 'Muli', sans-serif;
+    background-color:#ebd8c6;
+    margin:0px;
+    padding:0px
+}
+
+#index {
+    width:33%;
+    margin:0px auto;
+    padding:10px 50px;
+    background-color:white;
 }
 
 img {
-    width:30%;
+    width:40%;
     float:left;
+    margin-right:20px;
 }
 
 #quote {
-    /*font-style: italic;*/
-    font-size: 20px;
-    font-family: cursive;
+    font-size: 40px;
+    font-family: 'Bilbo Swash Caps', cursive;
 }
 
 #author a {
-    font-weight: bold;
     text-decoration: none;
+    font-size:20px;
+    color:#84582e;
+    font-weight:700;
 }
 
-#addInfo {
-    display:none;
+#author a:hover {
+    color:#ff6666;
 }
 
-.date {
-    font-weight: bold;
+iframe {
+    width:100%;
+    height:1000px;
+    border:none;
+    margin-top:40px;
 }
 
-#bio {
-    
+/*#addInfo {*/
+/*    display:none;*/
+/*}*/
+
+#authorInfo p {
+    margin:5px 0px;
+}
+
+.label {
+    font-weight: 700;
+}
+
+#authorInfo .bio {
+    margin:15px 0px;
 }

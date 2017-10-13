@@ -1,7 +1,7 @@
 <?php
 
 // connect to database & show errors
-include '../../../dbConn.php';
+include '../../dbConn.php';
 $dbConn = getDbConn();
 
 function getMaleAuthors() {

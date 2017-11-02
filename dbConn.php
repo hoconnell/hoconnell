@@ -10,10 +10,10 @@ function getDbConn($dbname = 'quotes') {
     
     if(strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-        $host = $url["host"];
-        $dbname = substr($url["path"], 1);
-        $username = $url["user"];
-        $password = $url["pass"];
+        $host = $url["us-cdbr-iron-east-05.cleardb.net"];
+        $dbname = substr($url["heroku_62e1947c07c45ab"], 1);
+        $username = $url["bbfe78ef67222c"];
+        $password = $url["ab87b8d3"];
     }
     
     $dbConn = new PDO("mysql:host=$host; dbname=$dbname", $username, $password);

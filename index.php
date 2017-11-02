@@ -38,6 +38,7 @@
         <a href="practice/zodiac/index.php">Ex 3: Zodiac</a>
         <a href="practice/joins.php">Ex 4: MySQL Joins</a>
         <a href="practice/sessions.php">Ex 5: PHP Sessions</a>
+        <a href="practice/javascript.html">Ex 6: JavaScript & jQuery</a>
         
         <h3>Challenges</h3>
         <a href="challenges/challenge1/index.html">Challenge 1: Four Seasons</a>

@@ -1,8 +1,8 @@
 <?php
 
-function getDbConn() {
+function getDbConn($dbname = 'quotes') {
     $host = 'localhost'; // cuz in C9
-    $dbname = 'quotes';
+    // $dbname = 'quotes';
     $username = 'root';
     $password = '';
     

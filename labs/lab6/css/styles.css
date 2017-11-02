@@ -1,0 +1,73 @@
+/* lab 6 */
+
+body {
+    font-family:'Nunito', sans-serif;
+    margin:0px;
+    padding:0px;
+    background-color:#ccebc6;
+}
+
+#content {
+    background-color:white;
+    margin:0px auto;
+    padding:10px 40px;
+    width:40%;
+}
+
+h1 {
+    margin:0px;
+    padding:10px 0px;
+    color:#4e9640;
+    text-align:center;
+}
+
+form {
+    margin-top:10px;
+}
+
+h3 {
+    display:inline;
+    line-height: 30px;
+}
+
+.error {
+    display:block;
+    font-style: italic; 
+    margin-bottom:100px;
+    text-align:center;
+    color:#4e9640;
+}
+
+input[type='submit']  {
+    margin:30px 0px;
+    color:#4e9640;
+    font-size: larger;
+}
+
+input[type='submit']:active {
+    color:white;
+}
+
+.quote {
+    margin:0px -40px;
+    padding:10px 40px;
+    font-weight: 200;
+}
+
+.quote:hover {
+    color:white;
+    background-color:#4e9640;
+}
+
+.author {
+    font-weight: 400;
+}
+
+label:hover {
+    /*color:white;*/
+    /*background-color:#4e9640;*/
+    
+    border-top: solid 2px #4e9640; 
+    border-bottom: solid 2px #4e9640; 
+    
+}

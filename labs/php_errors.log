@@ -265,3 +265,148 @@ Stack trace:
 [13-Oct-2017 18:15:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:0
 [13-Oct-2017 18:15:57 UTC] PHP   2. displayAuthorInfo() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:51
 [13-Oct-2017 18:18:07 UTC] PHP Parse error:  syntax error, unexpected '}', expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 37
+[31-Oct-2017 17:16:56 UTC] PHP Warning:  include(../../../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/labs/lab6/index.php on line 6
+[31-Oct-2017 17:16:56 UTC] PHP Stack trace:
+[31-Oct-2017 17:16:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab6/index.php:0
+[31-Oct-2017 17:16:56 UTC] PHP Warning:  include(): Failed opening '../../../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/labs/lab6/index.php on line 6
+[31-Oct-2017 17:16:56 UTC] PHP Stack trace:
+[31-Oct-2017 17:16:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab6/index.php:0
+[31-Oct-2017 17:16:56 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/labs/lab6/index.php on line 7
+[31-Oct-2017 17:16:56 UTC] PHP Stack trace:
+[31-Oct-2017 17:16:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab6/index.php:0
+[31-Oct-2017 17:18:51 UTC] PHP Warning:  include(../../../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/labs/lab6/index.php on line 6
+[31-Oct-2017 17:18:51 UTC] PHP Stack trace:
+[31-Oct-2017 17:18:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab6/index.php:0
+[31-Oct-2017 17:18:51 UTC] PHP Warning:  include(): Failed opening '../../../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/labs/lab6/index.php on line 6
+[31-Oct-2017 17:18:51 UTC] PHP Stack trace:
+[31-Oct-2017 17:18:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab6/index.php:0
+[31-Oct-2017 17:18:51 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/labs/lab6/index.php on line 7
+[31-Oct-2017 17:18:51 UTC] PHP Stack trace:
+[31-Oct-2017 17:18:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab6/index.php:0
+[31-Oct-2017 17:21:32 UTC] PHP Warning:  include(../../../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/labs/lab7/loginProcess.php on line 8
+[31-Oct-2017 17:21:32 UTC] PHP Stack trace:
+[31-Oct-2017 17:21:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab7/loginProcess.php:0
+[31-Oct-2017 17:21:32 UTC] PHP Warning:  include(): Failed opening '../../../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/labs/lab7/loginProcess.php on line 8
+[31-Oct-2017 17:21:32 UTC] PHP Stack trace:
+[31-Oct-2017 17:21:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab7/loginProcess.php:0
+[31-Oct-2017 17:21:32 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/labs/lab7/loginProcess.php on line 9
+[31-Oct-2017 17:21:32 UTC] PHP Stack trace:
+[31-Oct-2017 17:21:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab7/loginProcess.php:0
+[31-Oct-2017 17:26:17 UTC] PHP Warning:  include(../../../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 5
+[31-Oct-2017 17:26:17 UTC] PHP Stack trace:
+[31-Oct-2017 17:26:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:0
+[31-Oct-2017 17:26:17 UTC] PHP   2. displayAuthorInfo() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:63
+[31-Oct-2017 17:26:17 UTC] PHP Warning:  include(): Failed opening '../../../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 5
+[31-Oct-2017 17:26:17 UTC] PHP Stack trace:
+[31-Oct-2017 17:26:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:0
+[31-Oct-2017 17:26:17 UTC] PHP   2. displayAuthorInfo() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:63
+[31-Oct-2017 17:26:17 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 6
+[31-Oct-2017 17:26:17 UTC] PHP Stack trace:
+[31-Oct-2017 17:26:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:0
+[31-Oct-2017 17:26:17 UTC] PHP   2. displayAuthorInfo() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:63
+[31-Oct-2017 17:26:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(63): displayAuthorInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:26:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(63): displayAuthorInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:26:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(63): displayAuthorInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:28:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(63): displayAuthorInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:30:09 UTC] PHP Warning:  include(../../../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 5
+[31-Oct-2017 17:30:09 UTC] PHP Stack trace:
+[31-Oct-2017 17:30:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:0
+[31-Oct-2017 17:30:09 UTC] PHP   2. displayAuthorInfo() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:63
+[31-Oct-2017 17:30:09 UTC] PHP Warning:  include(): Failed opening '../../../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 5
+[31-Oct-2017 17:30:09 UTC] PHP Stack trace:
+[31-Oct-2017 17:30:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:0
+[31-Oct-2017 17:30:09 UTC] PHP   2. displayAuthorInfo() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:63
+[31-Oct-2017 17:30:09 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 6
+[31-Oct-2017 17:30:09 UTC] PHP Stack trace:
+[31-Oct-2017 17:30:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:0
+[31-Oct-2017 17:30:09 UTC] PHP   2. displayAuthorInfo() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:63
+[31-Oct-2017 17:30:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(63): displayAuthorInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:30:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(63): displayAuthorInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:31:01 UTC] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:31:01 UTC] PHP Stack trace:
+[31-Oct-2017 17:31:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:0
+[31-Oct-2017 17:31:01 UTC] PHP   2. displayAuthorInfo() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:63
+[31-Oct-2017 17:31:01 UTC] PHP   3. PDOStatement->execute() /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+[31-Oct-2017 17:31:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(63): displayAuthorInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:31:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(10): PDOStatement->execute()
+#1 /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php(63): displayAuthorInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab5/getAuthorInfo.php on line 10
+[31-Oct-2017 17:45:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php on line 49
+[31-Oct-2017 17:48:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php on line 49
+[31-Oct-2017 17:48:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php on line 49
+[31-Oct-2017 17:48:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php on line 49
+[31-Oct-2017 17:49:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE authorId = '4'' at line 11' in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php on line 49
+[31-Oct-2017 17:49:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE authorId = '4'' at line 11' in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/updateAuthor.php on line 49
+[31-Oct-2017 17:59:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2' in /home/ubuntu/workspace/hoconnell/labs/lab7/deleteAuthor.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab7/deleteAuthor.php(10): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/deleteAuthor.php on line 10
+[31-Oct-2017 18:02:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gender' cannot be null' in /home/ubuntu/workspace/hoconnell/labs/lab7/addAuthor.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/labs/lab7/addAuthor.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/addAuthor.php on line 26
+[31-Oct-2017 18:50:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/hoconnell/labs/lab7/index.php on line 31

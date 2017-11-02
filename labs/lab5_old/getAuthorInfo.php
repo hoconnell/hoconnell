@@ -2,7 +2,7 @@
 
 function displayAuthorInfo() {
 
-    include '../../../hoconnell/dbConn.php';
+    include '../../dbConn.php';
     $dbConn = getDbConn();
     
     $sql = "SELECT dob, dod, profession, country, gender, biography, picture FROM q_author WHERE authorId = " . $_GET['authorId'];

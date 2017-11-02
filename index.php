@@ -29,12 +29,15 @@
         <a href="labs/lab3/index.php">Lab 3: Ace Poker</a>
         <a href="labs/lab4/index.php">Lab 4: Image Carousel</a>
         <a href="labs/lab5/index.php">Lab 5: Random Quotes</a>
+        <a href="labs/lab6/index.php">Lab 6: Quote Finder</a>
+        <a href="labs/lab7/index.php">Lab 7: Author Add Login</a>
         
         <h3>Practice Exercises</h3>
         <a href="practice/randomBgColor.php">Ex 1: Random Background Color</a>
         <a href="practice/arrays.php">Ex 2: PHP Arrays</a>
         <a href="practice/zodiac/index.php">Ex 3: Zodiac</a>
         <a href="practice/joins.php">Ex 4: MySQL Joins</a>
+        <a href="practice/sessions.php">Ex 5: PHP Sessions</a>
         
         <h3>Challenges</h3>
         <a href="challenges/challenge1/index.html">Challenge 1: Four Seasons</a>

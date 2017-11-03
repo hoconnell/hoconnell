@@ -5,7 +5,7 @@ session_start();
 
 // print_r($_POST); // displays vals passed from login form
 
-include '../../../hoconnell/dbConn.php';
+include '../../dbConn.php';
 $dbConn = getDbConn();
 
 $username = $_POST['username'];

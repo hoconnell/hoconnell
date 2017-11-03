@@ -3,7 +3,7 @@
 
 
 // connect to database & show errors
-include '../../../hoconnell/dbConn.php';
+include '../../dbConn.php';
 $dbConn = getDbConn();
 
 function dispCountryOpt() {

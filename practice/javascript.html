@@ -3,16 +3,55 @@
     <head>
         <title> JavaScript & jQuery Practice </title>
         <script>
+            // put script at bottom, so HTML is done first
+            // alternative solution: put in function in top and executed at bottom
             var name;
             name = "John";
             // name = 8;
             // alert("My name is " + name);
-            console.log(name);
+            
+            
+            // document.getElementById("userName").innerHTML = name;
+            
+            function displayName() {
+                    // still have access to variables outside of function
+                    // name = document.getElementById("userName").value;
+                    name = $("#userName").val();
+                    console.log("Name = " + name);
+                    
+                    document.getElementById("results").innerHTML = "<h2>Your name is: " + name + "</h2>";
+                }
+                
+            function displayLength() {
+                    // name = document.getElementById("userName").value;
+                    name = $("#userName").val();
+                    console.log("Char count = " + name.length);
+                    
+                    document.getElementById("results").innerHTML = "<h2>Your name has " + name.length + " letters.</h2>";
+                }
         </script>
     </head>
     <body>
         
         <h1> JavaScript & jQuery </h1>
-
+        
+        Enter your name: <input type="text" id="userName" />
+        <br/>
+        <br/>
+        
+        <!--<button> Display Name! </button>-->
+        <button onclick="displayName();"> Display Name </button> <!-- wrong way -->
+        <button onclick="displayLength();"> Name Length </button> <!-- wrong way -->
+        
+        <!-- don't use <form> because will try to send form info to server-->
+        <!--<form onsubmit="return false">-->
+        <!--    <input type="button" value="Form Display Name" onclick="displayName()" />-->
+        <!--    <button onclick="displayName()"> Submit Button </button>-->
+        <!--</form>-->
+        
+        <div id="results"></div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </body>
 </html>

@@ -7,7 +7,7 @@ if(!isset($_SESSION['username'])) {
     exit;
 }
 
-include '../../../hoconnell/dbConn.php';
+include '../../dbConn.php';
 $dbConn = getDbConn();
 
 function authorList() {

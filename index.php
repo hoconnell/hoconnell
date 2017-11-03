@@ -22,6 +22,7 @@
         <a href="hw/hw1/index.html">Hw 1: CD/CS Topic Introduction</a>
         <a href="hw/hw2/index.php">Hw 2: PHP Control Structures</a>
         <a href="hw/hw3/index.php">Hw 3: HTML Forms</a>
+        <a href="hw/hw4/index.php">Hw 4: JavaScript/jQuery Quiz</a>
         
         <h3>Labs</h3>
         <a href="labs/lab1/index.html">Lab 1: Portfolio Page</a>
@@ -43,6 +44,7 @@
         <h3>Challenges</h3>
         <a href="challenges/challenge1/index.html">Challenge 1: Four Seasons</a>
         <a href="challenges/challenge2/index.php">Challenge 2: Random Card Game</a>
+        <a href="challenges/challenge3.html">Challenge 3: Comparing Numbers</a>
         
         <footer>
             <hr>

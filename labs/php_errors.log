@@ -410,3 +410,12 @@ Stack trace:
 #1 {main}
   thrown in /home/ubuntu/workspace/hoconnell/labs/lab7/addAuthor.php on line 26
 [31-Oct-2017 18:50:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/hoconnell/labs/lab7/index.php on line 31
+[02-Nov-2017 23:55:19 UTC] PHP Warning:  include(../../../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 4
+[02-Nov-2017 23:55:19 UTC] PHP Stack trace:
+[02-Nov-2017 23:55:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[02-Nov-2017 23:55:19 UTC] PHP Warning:  include(): Failed opening '../../../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 4
+[02-Nov-2017 23:55:19 UTC] PHP Stack trace:
+[02-Nov-2017 23:55:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0
+[02-Nov-2017 23:55:19 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/labs/lab5/index.php on line 5
+[02-Nov-2017 23:55:19 UTC] PHP Stack trace:
+[02-Nov-2017 23:55:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/labs/lab5/index.php:0

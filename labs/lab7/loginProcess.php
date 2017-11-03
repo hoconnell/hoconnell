@@ -23,7 +23,7 @@ $sql = "SELECT *
         WHERE username = :username
         AND password = :password";
         
-$namesParameters = array();
+$namedParameters = array();
 $namedParameters[':username'] = $username;
 $namedParameters[':password'] = $password;
 

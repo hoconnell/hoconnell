@@ -32,6 +32,7 @@
         <a href="labs/lab5/index.php">Lab 5: Random Quotes</a>
         <a href="labs/lab6/index.php">Lab 6: Quote Finder</a>
         <a href="labs/lab7/index.php">Lab 7: Author Add Login</a>
+        <a href="labs/lab8/index.php">Lab 8: Guess Random Number</a>
         
         <h3>Practice Exercises</h3>
         <a href="practice/randomBgColor.php">Ex 1: Random Background Color</a>

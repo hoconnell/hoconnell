@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Lab 8: Guess a Number </title>
+    <meta charset="utf-8" />
+
+    <!--Bootstrap files-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--Custom Styles-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1>Guess a Number</h1>
+        <p id="gameCount">Number of games: <strong>WON <span id="wonGames">0</span></strong> &nbsp; & &nbsp; <strong>LOST <span id="lostGames">0</span></strong></p>
+    </div>
+
+    <div id="directions" class="resultPara">
+        Guess a number between 1 and 99 in seven attempts!
+
+        <br/><br/>
+        <!--Random Number: <span id="numToGuess"></span>-->
+        <label for="guessField">Enter a guess: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit Guess" class="guessSubmit">
+
+        <br/><br/>
+        <p id="error"></p>
+        <p id="guesses"></p>
+        <p id="lastResult"></p>
+        <p id="lowOrHi"></p>
+        <button id="reset">Reset</button>
+
+    </div>
+
+    <script>
+        /*  NOTES:
+                            
+                    Math.random() >>>> floating point number 0-1 NOT including 1
+                    Math.floor() >>>> rounds down any floating point >> e.g. Math.floor(23.99) = 23
+                    
+                    querySelector() >>>> returns first matching element within document
+                    
+                    Number() >>>> ensures only number entered
+                    
+                    "Events" are actions that occur within broswer. "Event listener" waits for event; "event handler" code that runs when event occurs
+                    
+                    focus() >>>> automatically puts text cursor in text field when page loads
+                */
+
+        var randNum = Math.floor(Math.random() * 99) + 1;
+
+        var gCount = document.querySelector('#gameCount');
+        var gWon = document.querySelector('#wonGames');
+        var gLost = document.querySelector('#lostGames');
+        var error = document.querySelector('#error');
+        var guesses = document.querySelector('#guesses');
+        var lastResult = document.querySelector('#lastResult');
+        var lowOrHi = document.querySelector('#lowOrHi');
+        var guessSubmit = document.querySelector('.guessSubmit');
+        var guessField = document.querySelector('.guessField');
+
+        var resetButton = document.querySelector('#reset');
+
+        var guessCount = 1;
+        guessField.focus();
+        resetButton.style.display = 'none';
+
+        function checkGuess() {
+            // alert('Placeholder');
+
+            var userGuess = Number(guessField.value);
+            console.log(userGuess);
+
+            if (isNaN(userGuess) || userGuess <= 0 || userGuess > 99) { // 
+                error.innerHTML = 'Only accepts numbers 1 to 99';
+            }
+            else {
+                error.innerHTML = '';
+
+                if (guessCount === 1) {
+                    guesses.innerHTML = 'Previous guesses: ';
+                }
+
+                guesses.innerHTML += userGuess + ' ';
+
+                if (userGuess === randNum) {
+                    gWon.innerHTML += 1;
+
+                    lastResult.innerHTML = 'Congratulations! You got it right!';
+                    lastResult.style.backgroundColor = 'green';
+                    lowOrHi.innerHTML = '';
+                    setGameOver();
+                }
+                else if (guessCount === 7) {
+                    gLost.innerHTML++;
+
+                    lastResult.innerHTML = 'Sorry, you lost!';
+                    setGameOver();
+                }
+                else {
+                    lastResult.innerHTML = "Wrong!";
+                    lastResult.style.backgroundColor = 'red';
+
+                    if (userGuess < randNum) {
+                        lowOrHi.innerHTML = 'Last guess was too low!';
+                    }
+                    else if (userGuess > randNum) {
+                        lowOrHi.innerHTML = 'Last guess was too high!';
+                    }
+                }
+
+                guessCount++;
+                guessField.value = '';
+                guessField.focus();
+
+            }
+
+        }
+
+        guessSubmit.addEventListener('click', checkGuess);
+
+        function setGameOver() {
+            guessField.disabled = true;
+            guessSubmit.disabled = true;
+            resetButton.style.display = 'inline';
+            resetButton.addEventListener('click', resetGame);
+
+            gCount.style.display = 'inline';
+        }
+
+        function resetGame() {
+            guessCount = 1;
+
+            var resetParameters = document.querySelectorAll('.resultPara p');
+
+            for (var i = 0; i < resetParameters.length; i++) {
+                resetParameters[i].textContent = '';
+            }
+
+            resetButton.style.display = 'none';
+
+            guessField.disabled = false;
+            guessSubmit.disabled = false;
+            guessField.value = '';
+            guessField.focus();
+
+            lastResult.style.backgroundColor = 'white';
+
+            randNum = Math.floor(Math.random() * 99) + 1;
+        }
+    </script>
+
+    <!--<script type="text/javascript" src="js/functions.js"></script>-->
+
+</body>
+
+</html>

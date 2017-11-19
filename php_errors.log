@@ -9,3 +9,12 @@
 [07-Sep-2017 17:42:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/hoconnell/practice/randomBgColor.php on line 24
 [07-Sep-2017 17:42:29 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/hoconnell/practice/randomBgColor.php on line 24
 [12-Sep-2017 17:58:41 UTC] PHP Fatal error:  Cannot use [] for reading in /home/ubuntu/workspace/hoconnell/practice/arrays.php on line 8
+[13-Nov-2017 06:18:44 UTC] PHP Warning:  include(../../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/final-project/admin.php on line 10
+[13-Nov-2017 06:18:44 UTC] PHP Stack trace:
+[13-Nov-2017 06:18:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/admin.php:0
+[13-Nov-2017 06:18:44 UTC] PHP Warning:  include(): Failed opening '../../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/final-project/admin.php on line 10
+[13-Nov-2017 06:18:44 UTC] PHP Stack trace:
+[13-Nov-2017 06:18:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/admin.php:0
+[13-Nov-2017 06:18:44 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/final-project/admin.php on line 11
+[13-Nov-2017 06:18:44 UTC] PHP Stack trace:
+[13-Nov-2017 06:18:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/admin.php:0

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://ilearn.csumb.edu/pluginfile.php/721164/mod_resource/content/0/index.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> Lab 9: AJAX </title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            width:90%;
+            margin:0px auto;
+        }
+        .error {
+            color:red;
+            /*display:none;*/
+        }
+        .noError {
+            color:green;
+        }
+        input, select {
+            margin:2px 0px;
+        }
+        #county {
+            display:none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Sign Up Form </h1>
+
+    <form>
+        <fieldset>
+            <legend>Sign Up</legend>
+            First Name: <input type="text"><br> 
+            Last Name: <input type="text"><br> 
+            Email: <input type="text"><br> 
+            Phone Number:<input type="text"><br>
+            <br> 
+            Zip Code: <input type="text" id="zip"><span class="error" id="noZip"></span><br> 
+            City: <span id="city"></span><br> 
+            Latitude: <span id="lat"></span><br> 
+            Longitude: <span id="lon"></span><br>
+            <br> 
+            State: <select id="state">
+                        <option value="">- Select -</option>
+                        <option value="ak">Alaska</option>
+                        <option value="ca">California</option>
+                        <option value="hi">Hawaii</option>
+                        <option value="ny">New York</option>
+                        <option value="or">Oregon</option>
+                    </select><br> 
+            Select a County: <select id="county"></select><br> 
+            Desired Username: <input type="text" id="username"><span id="userCheck"></span><br> 
+            Password: <input type="password" id="pw"><br> 
+            Type Password Again: <input type="password" id="retype"><span class="error" id="noRetype"></span><br>
+            <br>
+            <input type="submit" class="btn btn-default" value="Sign up!">
+        </fieldset>
+    </form>
+
+
+
+    <script>
+        $('#zip').change(function(){ getCity() });
+        $('#state').change(function(){ getCounties() });
+        
+        $('#username').change(function(){ checkUsername() });
+        $('#retype').change(function(){ checkRetype() });
+        
+        // $('input[type=text]').hover(function(){
+        //     $(this).focus();
+        // });
+        // $('input[type=password]').hover(function(){
+        //     $(this).focus();
+        // });
+        
+        $('input').hover(function() {
+            $(this).focus();
+        });
+        $('select').hover(function() {
+            $(this).focus();
+        });
+        
+        function getCity() {
+            // alert($('#zip').val());
+            // console.log($('#zip').val());
+            
+            if($('#zip').val() !== "") {
+                $.ajax({
+    
+                    type: "GET",
+                    url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+                    dataType: "json",
+                    data: { "zip": $('#zip').val() },
+                    
+                    success: function(data,status) {
+                    
+                    if(data == false) {
+                        // console.log('not a zip');
+                        $('#noZip').html(' Zip code not found');
+                        $('#city').html('');
+                        $('#lat').html('');
+                        $('#lon').html(''); 
+                    } else {
+                        $('#noZip').html('');
+                        $('#city').html(data.city);
+                        $('#lat').html(data.latitude);
+                        $('#lon').html(data.longitude);   
+                    }
+                    
+                    },
+                    
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    //alert(status);
+                    }
+    
+                }); //ajax
+            } else {
+                $('#noZip').html(' Please input zipcode');
+            }
+            
+        } // getCity()
+        function getCounties() {
+            // alert($('#state').val());
+            console.log($('#state').val());
+            
+            $.ajax({
+
+                type: "GET",
+                url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
+                dataType: "json",
+                data: { "state": $('#state').val() },
+                
+                success: function(data,status) {
+                
+                // console.log(data[1].county);
+                // console.log(data.length);
+                
+                $('#county').empty();
+                
+                for(var i = 0; i < data.length; i++) {
+                    // console.log(i + " " + data[i].county);
+                    $('#county').append('<option>' + data[i].county + '</option>')
+                }
+                
+                },
+                
+                complete: function(data,status) { //optional, used for debugging purposes
+                //alert(status);
+                }
+
+            }); //ajax
+            
+            if($('#state').val() == '') {
+                $('#county').css('display', 'none');
+            } else {
+                $('#county').css('display', 'inline');
+            }
+        } // getCity()
+        
+        function checkUsername() {
+            
+            $.ajax({
+
+                type: "GET",
+                url: "checkUsernameApi.php?username=" + $('#username').val(),
+                dataType: "json",
+                data: { },
+                
+                success: function(data,status) {
+                
+                console.log(data);
+                
+                if(data == false) {
+                    $('#userCheck').html(' Username available!').addClass('noError').removeClass('error');
+                } else {
+                    $('#userCheck').html(' Username not available').addClass('error').removeClass('noError');
+                }
+                
+                },
+                
+                complete: function(data,status) { //optional, used for debugging purposes
+                //alert(status);
+                }
+
+            }); //ajax
+        } // checkUsername()
+        
+        function checkRetype() {
+            if($('#retype').val() !== $('#pw').val()) {
+                $('#noRetype').html(' Passwords do not match').addClass('error').removeClass('noError');
+            } else {
+                $('#noRetype').html(' Passwords match!').addClass('noError').removeClass('error');
+            }
+        } // checkRetype()
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1517,3 +1517,8 @@
 [12-Nov-2017 01:53:31 UTC] PHP Stack trace:
 [12-Nov-2017 01:53:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/hw/hw4/index.php:0
 [12-Nov-2017 01:53:31 UTC] PHP   2. displayColorOptions() /home/ubuntu/workspace/hoconnell/hw/hw4/index.php:46
+[19-Nov-2017 22:20:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'userId' cannot be null' in /home/ubuntu/workspace/hoconnell/hw/hw5/scoreApi.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/hoconnell/hw/hw5/scoreApi.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/hoconnell/hw/hw5/scoreApi.php on line 19

@@ -23,6 +23,7 @@
         <a href="hw/hw2/index.php">Hw 2: PHP Control Structures</a>
         <a href="hw/hw3/index.php">Hw 3: HTML Forms</a>
         <a href="hw/hw4/index.php">Hw 4: JavaScript/jQuery Quiz</a>
+        <a href="hw/hw5/index.php">Hw 5: AJAX Quiz</a>
         
         <h3>Labs</h3>
         <a href="labs/lab1/index.html">Lab 1: Portfolio Page</a>
@@ -33,6 +34,7 @@
         <a href="labs/lab6/index.php">Lab 6: Quote Finder</a>
         <a href="labs/lab7/index.php">Lab 7: Author Add Login</a>
         <a href="labs/lab8/index.html">Lab 8: Guess Random Number</a>
+        <a href="labs/lab9/index.html">Lab 9: AJAX Signup</a>
         
         <h3>Practice Exercises</h3>
         <a href="practice/randomBgColor.php">Ex 1: Random Background Color</a>

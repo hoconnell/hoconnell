@@ -36,7 +36,7 @@ function displayColorOptions() {
                 <div id="usernamePw">
                     Username: <input type="text" name="username"/><br/>
                     Password: <input type="password" name="password"/><br/>
-                    <span class="userPwHint" id="userHint">admin = secrets OR user1 = user1 OR user2 = user2</span><br/>
+                    <span id="userHint"></span><br/>
                 </div>
                 <button type="submit" form="login" name="submitLogin" class="loginOut" id="loginButton">Login</button>
                 <?php 
@@ -128,10 +128,39 @@ function displayColorOptions() {
         </div>
         
         <script>
-            $('input').hover(function() {
-                $(this).focus();
-                $('#userHint').toggle();
+            $('input[name=username]').hover(function() {
+                if($('input[name=username]').val() == '') {
+                    $(this).focus();
+                    $('#userHint').html('Login using username admin, user1, or user2.');    
+                }
+            }, function() {
+                $('#userHint').html('');
             });
+            
+            $('input[name=password]').hover(function() {
+                // console.log($(this).val());
+                $(this).focus();
+                
+                switch($('input[name=username]').val()) {
+                    case '': 
+                        $('#userHint').html('Please input a username.');
+                        break;
+                    case 'admin':
+                        $('#userHint').html('Password for admin is secrets.');
+                        break;
+                    case 'user1':
+                        $('#userHint').html('Password for user1 is user1.');
+                        break;
+                    case 'user2':
+                        $('#userHint').html('Password for user2 is user2.');
+                        break;
+                    default:
+                        $('#userHint').html($(this).val() + ' is not an existing username.');
+                }
+            }, function() {
+                $('#userHint').html('');
+            });
+            
             
         </script>
 

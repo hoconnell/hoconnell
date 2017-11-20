@@ -36,7 +36,8 @@ function displayColorOptions() {
                 <div id="usernamePw">
                     Username: <input type="text" name="username"/><br/>
                     Password: <input type="password" name="password"/><br/>
-                    <span id="userHint"></span><br/>
+                    <span id="userHint"></span>
+                    <br/>
                 </div>
                 <button type="submit" form="login" name="submitLogin" class="loginOut" id="loginButton">Login</button>
                 <?php 

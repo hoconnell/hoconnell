@@ -35,6 +35,7 @@
         <a href="labs/lab7/index.php">Lab 7: Author Add Login</a>
         <a href="labs/lab8/index.html">Lab 8: Guess Random Number</a>
         <a href="labs/lab9/index.html">Lab 9: AJAX Signup</a>
+        <a href="labs/lab10/index.php">Lab 10: Upload Files</a>
         
         <h3>Practice Exercises</h3>
         <a href="practice/randomBgColor.php">Ex 1: Random Background Color</a>

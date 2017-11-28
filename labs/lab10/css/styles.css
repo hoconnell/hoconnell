@@ -1,0 +1,58 @@
+/* Lab 10 */
+
+html {
+    background-color:wheat;
+}
+
+body {
+    font-family: Verdana;
+    width:500px;
+    margin:0px auto;
+    padding:25px;
+    background-color:white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.error {
+    color:red;
+}
+
+#imgs {
+    width:200px;
+    margin:0px;
+    padding:0px;
+}
+
+img {
+    display:inline;
+    margin:10px;
+}
+
+#big {
+    width:250px;
+    height:250px;
+    margin:0px;
+    padding:0px;
+    float:right;
+}
+
+#big img {
+    padding:0px;
+    width:200px;
+}
+
+footer {
+    clear:both;
+    text-align: center;
+    font-size:small
+}
+
+.divide {
+    height:2px;
+    width:400px;
+    background:wheat;
+    margin:20px auto;
+}

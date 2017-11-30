@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <style>
+            #key, #history {
+                display:none;
+            }
+            
+            #keykey {
+                font-style:italic;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="search"/>
+        <input type="submit" name="submit" onclick="run()"/>
+        <br/><br/>
+        <img src=""></img>
+        <p id="key">The keyword <span id="keykey"></span> has been searched <span id="count"></span> times.</p>
+        <p id="history">Keyword Search History:</p>
+        <ul id="timestamps"></ul>
+        
+        <script>
+
+        
+        function run() {
+            var word = $('#search').val();
+            
+            $('#key').css('display', 'block');
+            $('#history').css('display', 'block');
+            $('#keykey').html(word);
+            
+            console.log(word);
+            $.ajax({
+                type: "GET",
+                url: "search.php",
+                dataType: "json",
+                data: {"keyword": word},
+                success: function(data) {
+                    console.log(data);
+                    
+                    $('img').attr('src', data);
+                    display();
+                    },
+            });
+            
+            
+
+        }
+        
+        function display() {
+            var word = $('#search').val();
+            $.ajax({
+                type: "GET",
+                url: "database.php",
+                dataType: "json",
+                data: {"keyword": word},
+                success: function(stuff) {
+                    console.log(stuff);
+                    
+                    $('#count').html(stuff.count);
+                    time();
+                    },
+                    
+                    
+            });
+        }
+        
+        function time() {
+            var word = $('#search').val();
+            $.ajax({
+                type: "GET",
+                url: "database1.php",
+                dataType: "json",
+                data: {"keyword": word},
+                success: function(stuff) {
+                    console.log(stuff);
+                    $('#timestamps').empty();
+                    for(var i = 0; i < stuff.length; i++) {
+                        // console.log(i + " " + data[i].county);
+                        $('#timestamps').append('<li>' + stuff[i].timestamp + '</li>')
+                    }
+                    
+                    },
+                    
+                    
+            });
+        }
+            
+            
+        </script>
+    </body>
+</html>

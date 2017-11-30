@@ -34,10 +34,16 @@ h4, h5 {
     /*padding-bottom: 40px;*/
 }
 
+footer {
+    clear:both;
+}
+
 footer h5:hover {
     cursor: pointer;
     color:#e501b8;
 }
+
+/* LOGIN */
 
 #login {
     display:none;
@@ -46,4 +52,37 @@ footer h5:hover {
 .error {
     color:red;
     font-weight:bold;
+}
+
+/* MENU */
+
+h2 {
+    font-family: "Arima Madurai";
+    letter-spacing: 1px;
+}
+
+.category h2 {
+    color:white;
+    background-color:#02797f;
+    padding-left:40px;
+    width:250px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.tile {
+    background-color:rgba(2, 121, 127, 0.2);
+    padding: 10px;
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    height:250px;
+    width:186px;
+    float:left;
+    
+    border-radius: 20px;
+}
+
+.tile img {
+    width:100%;
+    border-radius: 15px;
 }

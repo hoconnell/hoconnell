@@ -4,7 +4,7 @@
     <head>
         <title> Final Project: Homepage </title>
         <meta charset='utf-8'>
-        <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Open+Sans|Sofia" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300|Open+Sans|Sofia" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css" />
         <script src="https://code.jquery.com/jquery.min.js"></script>
     </head>
@@ -12,13 +12,37 @@
         <div id='content'>
             <header>
                 <h1>Koshka Café</h1>
-                <h4>Menu</h4>
+                <!--<h4>Menu</h4>-->
             </header>
             
             <main>
-                
-                
-                
+                <div id="drinks" class="category">
+                    <h2>Drinks</h2>
+                    <div class="tile">
+                        <img src="https://www.starbucks.com.au/imagecache/bestfit/750x750/_files/Beverages/brewed_coffee.jpg" />
+                        
+                    </div>
+                    <div class="tile">
+                        
+                        
+                    </div>
+                    <div class="tile">
+                        
+                        
+                    </div>
+                    <div class="tile">
+                        
+                        
+                    </div>
+                    <div class="tile">
+                        
+                        
+                    </div>
+                    <div class="tile">
+                        
+                        
+                    </div>
+                </div>
             </main>
             
             <footer>

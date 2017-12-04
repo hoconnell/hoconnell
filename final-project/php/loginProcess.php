@@ -33,7 +33,7 @@ if(empty($record)) {
         <button onclick=\"location.href='index.php'\" type=\"button\">Return to Login</button>
     ";
     
-    header("Location: ../index.php?cred=false");
+    header("Location: ../login.php?cred=false");
 } else {
     $_SESSION['adminFullName'] = $record['firstName'] . " " . $record['lastName'];
     echo $_SESSION['adminFullName'];

@@ -1,5 +1,13 @@
 /* Final Project */
 
+/*
+dark teal: #02797f
+dark pink: #e501b8
+
+reg pink: #f982dc
+
+*/
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color:#02797f;
@@ -13,10 +21,16 @@ body {
     margin:0px auto;
 }
 
+/* ------------------------------------------------- HEADER / FOOTER ------------------------------------------------- */
+
 header, footer {
     text-align:center;
     margin:0px;
     padding: 0px;
+}
+
+header {
+    height:150px;
 }
 
 h1 {
@@ -24,49 +38,133 @@ h1 {
     font-size: 100px;
     color:#02797f;
     margin:0px;
-}
-
-h4, h5 {
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    margin:0px;
-    padding:0px;
-    /*padding-bottom: 40px;*/
+    font-weight: normal;
 }
 
 footer {
     clear:both;
 }
 
-footer h5:hover {
-    cursor: pointer;
-    color:#e501b8;
+footer p {
+    padding: 20px 0px;
+    margin:0px;
+    color:#02797f;
 }
 
-/* LOGIN */
+/* ------------------------------------------------- LOGIN ------------------------------------------------- */
+
+#loginButton {
+    background-color:white;
+    border-radius: 0px 15px 15px 0px;
+    width:90px;
+    padding:10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    position: relative;
+    left: 690px;
+    top:-130px;
+}
+
+#loginButton:hover {
+    font-weight:700;
+    color:#e501b8;
+    cursor: pointer;
+}
 
 #login {
-    display:none;
+    margin:0px auto;
+    width:300px;
+    background-color:rgba(2, 121, 127, 0.2);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+#login h3, #search h3, .welcome, #answer h3 { /* ------------- SEARCH ---------- */
+    font-family: "Arima Madurai";
+    font-size:30px;
+    text-align: center;
+    margin:10px 0px;
+}
+
+#login input {
+    margin-bottom:10px;
+}
+
+#login input[type=submit] {
+    display:block;
+    margin:10px auto;
 }
 
 .error {
-    color:red;
+    color:#e501b8;
     font-weight:bold;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 20px;
 }
 
-/* MENU */
+/* ------------------------------------------------- SEARCH ------------------------------------------------- */
+
+#search {
+    width:300px;
+    margin:0px auto;
+    background-color:rgba(2, 121, 127, 0.2);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+#search h4 {
+    display:inline;
+}
+
+#search input[type=number] {
+    width:25px;
+}
+
+#searchSubmit {
+    display:block;
+    margin:10px auto;
+    border:none;
+    padding:5px;
+    width:100px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#searchSubmit:hover {
+    background-color:#e501b8;
+    color:white;
+    font-weight: 700;
+}
+
+#search input {
+    padding:2px;
+}
+
+/* ------------------------------------------------- MENU ------------------------------------------------- */
+
+#drinks, #sweets, #sets {
+    display:none;
+    clear:both;
+    padding-top:2px;
+}
 
 h2 {
-    font-family: "Arima Madurai";
-    letter-spacing: 1px;
+    font-family: "Sofia";
+    font-weight: normal;
+    font-size: 40px;
 }
 
-.category h2 {
+.category {
     color:white;
     background-color:#02797f;
     padding-left:40px;
     width:250px;
     border-radius: 0px 15px 15px 0px;
+    margin-top:18px;
+    margin-bottom:20px;
 }
 
 .tile {
@@ -75,14 +173,112 @@ h2 {
     margin-left:20px;
     margin-top:10px;
     margin-bottom: 10px;
-    height:250px;
+    height:400px;
     width:186px;
     float:left;
-    
     border-radius: 20px;
 }
 
 .tile img {
     width:100%;
     border-radius: 15px;
+    height:186px;
+    margin-bottom: 5px;
+}
+
+.item, .price, .info {
+    margin:5px;
+}
+
+.item, .price {
+    font-family: "Arima Madurai";
+    background-color:#02797f;
+    margin-left:-10px;
+    margin-right:-10px;
+    padding-left: 20px;
+    color:white;
+}
+
+.item {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: -10px;
+    padding-top:5px;
+    /*color:#02797f;*/
+}
+
+.price {
+    font-size:18px;
+    padding-bottom: 3px;
+}
+
+.info {
+    margin-top:10px;
+}
+
+/* ------------------------------------------------- ADMIN ------------------------------------------------- */
+
+#options h4 {
+    /*padding-left:25px;*/
+    margin:0px;
+    padding:10px 0px 10px 25px;
+}
+
+#answer {
+    float:right;
+    width:360px;
+    margin-right:20px;
+    height:168px;
+    background-color:rgba(2, 121, 127, 0.2);
+    border-radius: 20px;
+    display:none;
+}
+
+#answer h3 {
+    text-align:center;
+    margin:60px 0px;
+}
+
+#delUpdate .category {
+    margin-bottom:0px;
+}
+
+.updateDelete {
+    display:inline;
+    padding-left:20px;
+}
+
+.upDelItem {
+    margin-left:30px;
+    font-weight: bold;
+}
+
+.upDelList {
+    padding:5px 0px 8px 0px;
+    clear:both;
+}
+
+#addItem, .upDelList input {
+    border:none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /*background-color:#02797f;*/
+    width:80px;
+    padding:5px 10px;
+    /*color:white;*/
+}
+
+#addItem:hover, .upDelList input:hover {
+    font-weight: bold;
+    background-color:#e501b8;
+    color:white;
+}
+
+#addItem {
+    width: 120px;
+    font-size:14px;
+    
+    position: relative;
+    left:300px;
+    top:-45px;
 }

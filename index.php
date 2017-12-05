@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Heather CST 352 Workspace Directory</title>
+        <meta charset="utf-8" />
         <style>
             h1, h3, a{
                 font-family:Tahoma, sans-serif;
@@ -50,6 +51,9 @@
         <a href="challenges/challenge2/index.php">Challenge 2: Random Card Game</a>
         <a href="challenges/challenge3.html">Challenge 3: Comparing Numbers</a>
         <a href="challenges/challenge4/index.html">Challenge 4: Pixabay AJAX</a>
+        
+        <h3>Final Project</h3>
+        <a href="final-project/index.php">Café Menu</a>
         
         <footer>
             <hr>

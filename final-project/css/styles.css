@@ -1,10 +1,13 @@
 /* Final Project */
 
 /*
-dark teal: #02797f
-dark pink: #e501b8
+dark teal: #02797f    rgb(2, 121, 127)
+dark pink: #e501b8    rgb(229, 1, 184)
+dark purple: #480063    rgb(72, 0, 99)
 
+reg teal: #25bcc3
 reg pink: #f982dc
+reg purple: #871eae    rgb(135, 30, 174)
 
 */
 
@@ -13,12 +16,23 @@ body {
     background-color:#02797f;
     margin:0px;
     padding: 0px;
+    
+    background:rgba(2, 121, 127, 0.5);
+    background-image:
+        radial-gradient(rgba(2, 121, 127, .8), 15%, transparent 0), 
+        radial-gradient(rgba(229, 1, 184, .8), 15%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
 }
 
 #content {
     width:700px;
     background-color: white;
     margin:0px auto;
+    border-left: #02797f 10px solid;
+    border-right: #02797f 10px solid;
+    border-bottom: #02797f 10px solid;
+    
 }
 
 /* ------------------------------------------------- HEADER / FOOTER ------------------------------------------------- */
@@ -36,7 +50,7 @@ header {
 h1 {
     font-family: 'Sofia';
     font-size: 100px;
-    color:#02797f;
+    color:#e501b8;
     margin:0px;
     font-weight: normal;
 }
@@ -48,7 +62,7 @@ footer {
 footer p {
     padding: 20px 0px;
     margin:0px;
-    color:#02797f;
+    color:#e501b8;
 }
 
 /* ------------------------------------------------- LOGIN ------------------------------------------------- */
@@ -63,7 +77,7 @@ footer p {
     
     position: relative;
     left: 690px;
-    top:-130px;
+    top:-105px;
 }
 
 #loginButton:hover {
@@ -80,7 +94,7 @@ footer p {
     border-radius: 20px;
 }
 
-#login h3, #search h3, .welcome, #answer h3 { /* ------------- SEARCH ---------- */
+#login h3, #search h3, .welcome, #answer h3, #addForm h3, #updateForm h3 { /* ------------- SEARCH ---------- */
     font-family: "Arima Madurai";
     font-size:30px;
     text-align: center;
@@ -102,19 +116,20 @@ footer p {
     text-align: center;
     margin-top:0px;
     margin-bottom: 20px;
+    
 }
 
-/* ------------------------------------------------- SEARCH ------------------------------------------------- */
+/* ------------------------------------------------- SEARCH / ADD / UPDATE ------------------------------------------------- */
 
-#search {
+#search, #addForm, #updateForm {
     width:300px;
-    margin:0px auto;
+    margin:5px auto;
     background-color:rgba(2, 121, 127, 0.2);
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
 }
 
-#search h4 {
+#search h4, #addForm h4, #updateForm h4 {
     display:inline;
 }
 
@@ -122,9 +137,10 @@ footer p {
     width:25px;
 }
 
-#searchSubmit {
+#searchSubmit, #addForm input[type=submit], #updateForm input[type=submit] {
     display:block;
     margin:10px auto;
+    margin-top:20px;
     border:none;
     padding:5px;
     width:100px;
@@ -133,7 +149,7 @@ footer p {
     letter-spacing: 2px;
 }
 
-#searchSubmit:hover {
+#searchSubmit:hover, #addForm input[type=submit]:hover, #updateForm input[type=submit]:hover {
     background-color:#e501b8;
     color:white;
     font-weight: 700;
@@ -173,7 +189,7 @@ h2 {
     margin-left:20px;
     margin-top:10px;
     margin-bottom: 10px;
-    height:400px;
+    height:380px;
     width:186px;
     float:left;
     border-radius: 20px;
@@ -226,8 +242,8 @@ h2 {
 
 #answer {
     float:right;
-    width:360px;
-    margin-right:20px;
+    width:230px;
+    margin-right:100px;
     height:168px;
     background-color:rgba(2, 121, 127, 0.2);
     border-radius: 20px;
@@ -281,4 +297,21 @@ h2 {
     position: relative;
     left:300px;
     top:-45px;
+}
+
+/* ------------------------------------------------- ADD / UPDATE ------------------------------------------------- */
+
+#addForm input[type=submit], #updateForm input[type=submit] {
+    width:150px;
+    margin-top:15px;
+}
+
+#addForm input, .addSec, #updateForm input {
+    margin-bottom:15px;
+    border:none;
+}
+
+textarea {
+    vertical-align: top;
+    border:none;
 }

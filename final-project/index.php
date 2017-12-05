@@ -16,7 +16,7 @@
             </header>
             
             <main>
-                <!--<h3 id="searchButton">Search Menu</h3>-->
+                
                 <div id="search">
                     <h3>Search Menu</h3>
                     <h4>Item: </h4>
@@ -54,28 +54,6 @@
                 </div>
                 
                 <div id="menuArea"></div>
-                <!--<div id="menuArea">-->
-                <!--    <div id="drinks">-->
-                <!--        <h2 class="category">Drinks</h2>-->
-                <!--        <div class="menu">-->
-                            
-                <!--        </div>-->
-                <!--    </div>-->
-                    
-                <!--    <div id="sweets">-->
-                <!--        <h2 class="category">Sweets</h2>-->
-                <!--        <div class="menu">-->
-                            
-                <!--        </div>-->
-                <!--    </div>-->
-                    
-                <!--    <div id="sets">-->
-                <!--        <h2 class="category">Sets</h2>-->
-                <!--        <div class="menu">-->
-                            
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
                 
             </main>
             

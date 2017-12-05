@@ -46,3 +46,21 @@ Stack trace:
 #0 /home/ubuntu/workspace/hoconnell/final-project/php/searchMenu.php(57): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/hoconnell/final-project/php/searchMenu.php on line 57
+[04-Dec-2017 22:28:31 UTC] PHP Warning:  include(../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php on line 10
+[04-Dec-2017 22:28:31 UTC] PHP Stack trace:
+[04-Dec-2017 22:28:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php:0
+[04-Dec-2017 22:28:31 UTC] PHP Warning:  include(): Failed opening '../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php on line 10
+[04-Dec-2017 22:28:31 UTC] PHP Stack trace:
+[04-Dec-2017 22:28:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php:0
+[04-Dec-2017 22:28:31 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php on line 11
+[04-Dec-2017 22:28:31 UTC] PHP Stack trace:
+[04-Dec-2017 22:28:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php:0
+[04-Dec-2017 22:28:41 UTC] PHP Warning:  include(../dbConn.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php on line 10
+[04-Dec-2017 22:28:41 UTC] PHP Stack trace:
+[04-Dec-2017 22:28:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php:0
+[04-Dec-2017 22:28:41 UTC] PHP Warning:  include(): Failed opening '../dbConn.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php on line 10
+[04-Dec-2017 22:28:41 UTC] PHP Stack trace:
+[04-Dec-2017 22:28:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php:0
+[04-Dec-2017 22:28:41 UTC] PHP Fatal error:  Call to undefined function getDbConn() in /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php on line 11
+[04-Dec-2017 22:28:41 UTC] PHP Stack trace:
+[04-Dec-2017 22:28:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/hoconnell/final-project/php/deleteItem.php:0

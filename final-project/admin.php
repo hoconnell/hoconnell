@@ -17,7 +17,8 @@ function itemList() {
     
     $sql = "SELECT itemId, item, categoryId, category
             FROM m_items
-            NATURAL JOIN m_categories";
+            NATURAL JOIN m_categories
+            ORDER BY item";
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -90,17 +91,24 @@ $rAvg = $rAvg[average];
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Final Project: Homepage </title>
+        <title> Final Project: Admin </title>
         <meta charset='utf-8'>
         <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300,800|Open+Sans:400,700|Sofia" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css" />
         <script src="https://code.jquery.com/jquery.min.js"></script>
+        <script>
+            function confirmDelete() {
+                // return false;
+                return confirm("Are you sure you want to delete this item?");
+            }
+        </script>
     </head>
     <body>
         <div id='content'>
             <header>
                 <h1>Koshka Café</h1>
                 <div id="loginButton">Logout</div>
+                
             </header>
             
             <main>
@@ -135,7 +143,7 @@ $rAvg = $rAvg[average];
                             <input type='submit' value='Update' />
                         </form>";
                         
-                        echo "<form class='updateDelete' action='deleteItem.php' onsubmit='return confirmDelete();'>
+                        echo "<form class='updateDelete' action='php/deleteItem.php' onsubmit='return confirmDelete();'>
                             <input type='hidden' name='itemId' value='" . $item['itemId'] . "' />
                             <input type='submit' value='Delete'>
                         </form>";
@@ -158,6 +166,10 @@ $rAvg = $rAvg[average];
         <script>
             $('#loginButton').click(function() {
                 window.location.href = 'php/logoutProcess.php';
+            });
+            
+            $('#addItem').click(function() {
+               window.location.href = 'addItem.php'; 
             });
             
             $('#options h4').hover(function() {
